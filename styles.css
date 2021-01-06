@@ -1,33 +1,78 @@
-@import url(https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,800&display=swap);
-*{
- box-sizing: border-box; animation-duration: .5s; transition: .5s
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    animation-duration: 0.5s;
+    transition:0.5s;
 }
-h1,h2,h3,h4,h5,h6{
- font-family: Cabin,Verdana,Geneva,Tahoma,sans-serif
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Cabin, Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
- background: #2b2b2e; display: flex; flex-direction: column; justify-content: center; width: 100vw; height: 100vh; align-items: center; overflow: hidden
+body {
+    background: rgb(43, 43, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
 }
-body div{
- background: rgba(24,23,23); padding: 20px; border-radius: 5px; text-align: center; box-shadow: 0 10px 20px 1px rgba(0,0,0,.5); width: 600px; animation: float-down 2s
+
+body div {
+    background: rgba(24,23,23);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 20px 1px rgba(0,0,0,0.5);
+    width: 600px;
+    animation: float-down 2s;
 }
-body div *{
- margin: 10px
+
+body div * {
+    margin:10px;
 }
-body div img{
- height: 150px
+
+body div img {
+    height: 150px;
 }
-body div h3{
- font-size: 50px; color: #fff; font-family: Open Sans,Arial,Helvetica,sans-serif; margin: 0
+
+body div h3 {
+    font-size: 50px;
+    color: white;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    margin:0;
 }
-body div p{
- margin: 0; color: #fff; font-size: 30px; font-weight: 100; font-family: Open Sans,Arial,Helvetica,sans-serif; text-shadow: 0 0 20px #fff; white-space: pre; font-style: oblique
+
+body div p {
+    margin:0;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 20px white;
+    white-space: pre;
+    font-style: oblique;
 }
-body div h1{
- font-size: 60px; color: #fff; white-space: pre
+
+body div h1 {
+    font-size: 60px;
+    color: white;
+    white-space: pre;
 }
-@keyframes float-down{
- from{
-  transform: translateY(-100px); opacity: 0
- }
+
+#timer {
+    animation: opacity 0.5s alternate infinite ease-in-out 0.5s;
+}
+
+@keyframes float-down {
+    from {transform: translateY(-100px); opacity:0;}
+}
+
+@keyframes opacity {
+    to {opacity:0;}
+}
+@keyframes bounce {
+    50% {transform: scale(1.1)}
 }
