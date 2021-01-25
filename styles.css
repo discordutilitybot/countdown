@@ -71,8 +71,5 @@ body div h1 {
 }
 
 @keyframes opacity {
-    to {opacity:0;}
-}
-@keyframes bounce {
-    50% {transform: scale(1.1)}
+    50% {transform: scale(1.05)}
 }
