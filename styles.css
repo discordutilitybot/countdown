@@ -27,7 +27,7 @@ body div {
     text-align: center;
     box-shadow: 0 10px 20px 1px rgba(0,0,0,0.5);
     width: 600px;
-    animation: float-down 2s;
+    animation: float-down 1s;
 }
 
 body div * {
@@ -63,7 +63,7 @@ body div h1 {
 }
 
 #timer {
-    animation: opacity 0.5s alternate infinite ease-in-out 0.5s;
+    animation: opacity 1s alternate infinite ease-in-out 0.5s;
 }
 
 @keyframes float-down {
