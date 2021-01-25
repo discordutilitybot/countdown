@@ -63,7 +63,7 @@ body div h1 {
 }
 
 #timer {
-    animation: opacity 1s alternate infinite ease-in-out 0.5s;
+    animation: opacity 1s alternate infinite ease-in-out;
 }
 
 @keyframes float-down {
